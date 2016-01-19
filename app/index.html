@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="charts"></html>
+<head>
+  <title>Chart Examples</title>
+  <script src="assets/libs/angular.js"></script>
+  <script src="assets/libs/angular-route.js"></script>
+  <script src="assets/libs/jquery.js"></script>
+  <script src="assets/libs/chartist.js"></script>
+  <script src="assets/js/app.module.js"></script>
+  <script src="assets/js/app.routes.js"></script>
+  <script src="assets/js/app.controllers.js"></script>
+  <link href="assets/libs/chartist.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="page">
+  <div class="nav-bar">
+    <div class="container">
+      <ul class="navigation">
+        <li><a href="#/top-apps">Top Apps</a></li>
+        <li><a href="#/most-minutes">Most Minutes</a></li>
+        <li><a href="#/most-stars">Most Stars</a></li>
+        <li><a href="#/weekly-breakdown">Weekly Breakdown</a></li>
+        <li><a href="#/your-class">Your Class</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container content">
+    <div ng-view class="content"></div>
+  </div>
+</body>

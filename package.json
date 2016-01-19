@@ -1,0 +1,28 @@
+{
+  "name": "angular-waffle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "jmcmullen",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-live-server": "0.0.29",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.5.1",
+    "live-server": "^0.8.2"
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "angular2": "2.0.0-alpha.44"
+  }
+}

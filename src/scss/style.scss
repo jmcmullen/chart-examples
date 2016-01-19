@@ -1,0 +1,130 @@
+@import 'settings';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: $gray;
+  background: #fff;
+  font-family: $lato-font;
+}
+
+.nav-bar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  top: 0px;
+  box-shadow: 0 0 5px #dedede;
+  z-index: 10;
+  .navigation {
+    background: #fff;
+    margin: 0;
+    padding-top: 5px;
+    li {
+      display: inline;
+      padding: 10px 20px;;
+      float: right;
+      a {
+        color: $gray;
+        text-decoration: none;
+        font-weight: 100;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+  &.content {
+    margin-top: 100px;
+  }
+}
+
+.weekly-breakdown {
+  .six.columns {
+    padding-top: 60px;
+    h3, h4 {
+      text-align: center;
+      line-height: 0.1
+    }
+  }
+  .ct-chart {
+    .ct-series-a .ct-bar {
+      stroke: $green;
+    }
+    .ct-series-b .ct-bar {
+      stroke: $blue;
+    }
+  }
+}
+
+.your-class {
+  .six.columns {
+    padding-top: 60px;
+    h3, h4 {
+      text-align: center;
+      line-height: 0.1
+    }
+  }
+  .ct-your-class {
+    .ct-series-a .ct-bar {
+      stroke: $pink;
+    }
+    .ct-series-b .ct-bar {
+      stroke: $purple;
+    }
+  }
+}
+
+.most-stars {
+  padding-top: 60px;
+  .ct-most-stars {
+    .ct-series-a .ct-bar {
+      stroke: $darkblue;
+      stroke-width: 50px;
+    }
+  }
+}
+
+.most-minutes {
+  padding-top: 60px;
+  .ct-most-minutes {
+    .ct-series-a .ct-bar {
+      stroke: $purple;
+      stroke-width: 50px;
+    }
+  }
+}
+
+.top-apps {
+  padding-top: 60px;
+  .ct-top-apps {
+    .ct-series-a .ct-slice-pie {
+      stroke: $purple;
+      fill: $purple;
+    }
+    .ct-series-b .ct-slice-pie {
+      stroke: $pink;
+      fill: $pink;
+    }
+    .ct-series-c .ct-slice-pie {
+      stroke: $darkblue;
+      fill: $darkblue;
+    }
+    .ct-series-d .ct-slice-pie {
+      stroke: $green;
+      fill: $green;
+    }
+    .ct-series-e .ct-slice-pie {
+      stroke: $blue;
+      fill: $blue;
+    }
+
+  }
+}
